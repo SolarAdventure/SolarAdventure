@@ -25,32 +25,32 @@ export class AppComponent {
     }, {
       name: 'Erde',
       description: 'Ein Stern',
-      img: '../assets/sun.svg',
+      img: '../assets/03_earth.svg',
       isFavourite: false;
     }, {
       name: 'Mars',
       description: 'Ein Stern',
-      img: '../assets/sun.svg',
+      img: '../assets/04_mars.svg',
       isFavourite: false;
     }, {
       name: 'Jupiter',
       description: 'Ein Stern',
-      img: '../assets/sun.svg',
+      img: '../assets/05_jupiter.svg',
       isFavourite: false;
     }, {
       name: 'Saturn',
       description: 'Ein Stern',
-      img: '../assets/sun.svg',
+      img: '../assets/06_saturn.svg',
       isFavourite: false;
     }, {
       name: 'Uranus',
       description: 'Ein Stern',
-      img: '../assets/sun.svg',
+      img: '../assets/07_uranus.svg',
       isFavourite: false;
     }, {
-      name: 'Neptune',
+      name: 'Neptun',
       description: 'Ein Stern',
-      img: '../assets/sun.svg',
+      img: '../assets/08_neptune.svg',
       isFavourite: false;
     },
   ]
