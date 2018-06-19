@@ -53,8 +53,8 @@ export class AppComponent {
       img: '../assets/08_neptune.svg',
       isFavourite: false
     },
-
+    // Sources:
     // https://solarsystem.nasa.gov/resources/681/solar-system-temperatures/
-    // 
+    // https://www.space.com/16080-solar-system-planets.html
   ]
 }
