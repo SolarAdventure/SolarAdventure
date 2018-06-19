@@ -8,7 +8,8 @@ import {
   MatAutocompleteModule,
   MatToolbarModule,
   MatTabsModule,
-  MatCardModule
+  MatCardModule,
+  MatButtonModule
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -28,7 +29,8 @@ import { PlanetComponent } from './planet/planet.component';
     MatAutocompleteModule,
     MatToolbarModule,
     MatTabsModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
