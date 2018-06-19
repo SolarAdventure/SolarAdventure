@@ -1,7 +1,4 @@
-.planets {
+#planets {
     display: flex;
 }
 
-app-planet {
-    max-width: 400px;
-}
