@@ -13,42 +13,42 @@ export class AppComponent {
       img: '../assets/sun.svg',
       isFavourite: false;
     }, {
-      name: 'Sun',
+      name: 'Merkur',
+      description: 'Ein Stern',
+      img: '../assets/01_mercury.svg',
+      isFavourite: false;
+    }, {
+      name: 'Venus',
+      description: 'Ein Stern',
+      img: '../assets/02_venus.svg',
+      isFavourite: false;
+    }, {
+      name: 'Erde',
       description: 'Ein Stern',
       img: '../assets/sun.svg',
       isFavourite: false;
     }, {
-      name: 'Sun',
+      name: 'Mars',
       description: 'Ein Stern',
       img: '../assets/sun.svg',
       isFavourite: false;
     }, {
-      name: 'Sun',
+      name: 'Jupiter',
       description: 'Ein Stern',
       img: '../assets/sun.svg',
       isFavourite: false;
     }, {
-      name: 'Sun',
+      name: 'Saturn',
       description: 'Ein Stern',
       img: '../assets/sun.svg',
       isFavourite: false;
     }, {
-      name: 'Sun',
+      name: 'Uranus',
       description: 'Ein Stern',
       img: '../assets/sun.svg',
       isFavourite: false;
     }, {
-      name: 'Sun',
-      description: 'Ein Stern',
-      img: '../assets/sun.svg',
-      isFavourite: false;
-    }, {
-      name: 'Sun',
-      description: 'Ein Stern',
-      img: '../assets/sun.svg',
-      isFavourite: false;
-    }, {
-      name: 'Sun',
+      name: 'Neptune',
       description: 'Ein Stern',
       img: '../assets/sun.svg',
       isFavourite: false;
