@@ -14,11 +14,13 @@ import {
 
 import { AppComponent } from './app.component';
 import { PlanetComponent } from './planet/planet.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PlanetComponent
+    PlanetComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,
