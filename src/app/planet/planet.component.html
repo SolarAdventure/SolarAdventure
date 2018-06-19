@@ -2,8 +2,10 @@
   <mat-card-header>
     <mat-card-title>{{planet.name}}</mat-card-title>
   </mat-card-header>
-  <img mat-card-image src="../../assets/{{planet.img}}" alt="Ein Foto von {{planet.name}}">
   <mat-card-content>
+    <div>
+      <img mat-card-image src="../../assets/{{planet.img}}" alt="Ein Foto von {{planet.name}}">
+    </div>
     <p>{{planet.description}}</p>
   </mat-card-content>
   <mat-card-actions>
