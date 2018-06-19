@@ -8,7 +8,12 @@ import { InfoDialogComponent } from './info-dialog/info-dialog.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog) {
+    const plans = JSON.parse(localStorage.getItem('planets'));
+    if (plans) {
+      this.planets = plans;
+    }
+  }
   planets = [
     {
       name: 'Sonne',
@@ -62,7 +67,12 @@ export class AppComponent {
     this.dialog.open(InfoDialogComponent);
   }
 
+  save() {
+    localStorage.setItem('planets', JSON.stringify(this.planets));
+  }
+
   // Sources:
   // https://solarsystem.nasa.gov/resources/681/solar-system-temperatures/
   // https://www.space.com/16080-solar-system-planets.html 
 }
+
