@@ -2,12 +2,16 @@
   <mat-card-header>
     <mat-card-title>{{planet.name}}</mat-card-title>
   </mat-card-header>
-  <img mat-card-image src="../../assets/{{planet.img}}" alt="Ein Foto von {{planet.name}}">
   <mat-card-content>
+    <div>
+      <img mat-card-image src="../../assets/{{planet.img}}" alt="Ein Foto von {{planet.name}}">
+    </div>
     <p>{{planet.description}}</p>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
+    <button mat-raised-button color="primary" *ngIf="planet.isFavourite; else notFavourite" (click)="planet.isFavourite = false">Ist mein Favorit</button>
+    <ng-template #notFavourite>
+      <button mat-button (click)="planet.isFavourite = true">Ist keiner meiner Favoriten</button>
+    </ng-template>
   </mat-card-actions>
 </mat-card>
