@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material';
+import { InfoDialogComponent } from './info-dialog/info-dialog.component';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  constructor (public dialog: MatDialog) {}
   planets = [
     {
       name: 'Sonne',
@@ -53,5 +56,9 @@ export class AppComponent {
       img: '../assets/08_neptune.svg',
       isFavourite: false
     },
-  ]
+  ];
+
+  openDialog() {
+    this.dialog.open(InfoDialogComponent);
+  }
 }
