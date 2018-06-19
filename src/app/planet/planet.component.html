@@ -13,7 +13,7 @@
     <p>{{planet.description}}</p>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-icon-button color="primary" *ngIf="planet.isFavourite; else notFavourite" (click)="planet.isFavourite = false; change.emit()"><mat-icon>star</mat-icon></button>
+    <button mat-mini-fab color="accent" *ngIf="planet.isFavourite; else notFavourite" (click)="planet.isFavourite = false; change.emit()"><mat-icon>star</mat-icon></button>
     <ng-template #notFavourite>
       <button mat-icon-button (click)="planet.isFavourite = true; change.emit()"><mat-icon>star_border</mat-icon></button>
     </ng-template>
