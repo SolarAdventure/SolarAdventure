@@ -37,6 +37,9 @@ import { InfoDialogComponent } from './info-dialog/info-dialog.component';
     MatButtonModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    InfoDialogComponent
+  ]
 })
 export class AppModule { }
