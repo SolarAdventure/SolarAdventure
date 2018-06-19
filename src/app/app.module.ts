@@ -1,7 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { MatDialogModule } from '@angular/material';
+import {
+  MatDialogModule,
+  MatInputModule,
+  MatFormFieldModule,
+  MatAutocompleteModule,
+  MatToolbarModule,
+  MatTabsModule,
+} from '@angular/material';
 
 import { AppComponent } from './app.component';
 
@@ -12,7 +19,12 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatAutocompleteModule,
+    MatToolbarModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
