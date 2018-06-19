@@ -12,12 +12,12 @@ import {
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
-import { PlanetComponentComponent } from './planet-component/planet-component.component';
+import { PlanetComponent } from './planet/planet.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PlanetComponentComponent
+    PlanetComponent
   ],
   imports: [
     BrowserModule,

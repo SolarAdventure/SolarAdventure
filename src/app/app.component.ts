@@ -6,5 +6,52 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  planets = [
+    {
+      name: 'Sonne',
+      description: 'Ein Stern',
+      img: '../assets/sun.svg',
+      isFavourite: false;
+    }, {
+      name: 'Sun',
+      description: 'Ein Stern',
+      img: '../assets/sun.svg',
+      isFavourite: false;
+    }, {
+      name: 'Sun',
+      description: 'Ein Stern',
+      img: '../assets/sun.svg',
+      isFavourite: false;
+    }, {
+      name: 'Sun',
+      description: 'Ein Stern',
+      img: '../assets/sun.svg',
+      isFavourite: false;
+    }, {
+      name: 'Sun',
+      description: 'Ein Stern',
+      img: '../assets/sun.svg',
+      isFavourite: false;
+    }, {
+      name: 'Sun',
+      description: 'Ein Stern',
+      img: '../assets/sun.svg',
+      isFavourite: false;
+    }, {
+      name: 'Sun',
+      description: 'Ein Stern',
+      img: '../assets/sun.svg',
+      isFavourite: false;
+    }, {
+      name: 'Sun',
+      description: 'Ein Stern',
+      img: '../assets/sun.svg',
+      isFavourite: false;
+    }, {
+      name: 'Sun',
+      description: 'Ein Stern',
+      img: '../assets/sun.svg',
+      isFavourite: false;
+    },
+  ]
 }
