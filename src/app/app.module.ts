@@ -8,13 +8,16 @@ import {
   MatAutocompleteModule,
   MatToolbarModule,
   MatTabsModule,
+  MatCardModule
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
+import { PlanetComponentComponent } from './planet-component/planet-component.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PlanetComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,8 @@ import { AppComponent } from './app.component';
     MatFormFieldModule,
     MatAutocompleteModule,
     MatToolbarModule,
-    MatTabsModule
+    MatTabsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
