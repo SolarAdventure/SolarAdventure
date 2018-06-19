@@ -9,7 +9,8 @@ import {
   MatToolbarModule,
   MatTabsModule,
   MatCardModule,
-  MatButtonModule
+  MatButtonModule,
+  MatIconModule
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -34,7 +35,8 @@ import { InfoDialogComponent } from './info-dialog/info-dialog.component';
     MatToolbarModule,
     MatTabsModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent],
