@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-planet',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./planet.component.css']
 })
 export class PlanetComponent implements OnInit {
+  @Input() planet;
 
   constructor() { }
 
