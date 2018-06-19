@@ -15,12 +15,14 @@ import {
 import { AppComponent } from './app.component';
 import { PlanetComponent } from './planet/planet.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { InfoDialogComponent } from './info-dialog/info-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PlanetComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    InfoDialogComponent
   ],
   imports: [
     BrowserModule,
