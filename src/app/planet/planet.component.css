@@ -1,13 +1,8 @@
 mat-card {
     margin: 5px;
-    width: 400px;
+    min-width:200px;
 }
 
 mat-card-content div {
-    width: 400px;
     padding: 20px;
-}
-
-[mat-card-image] {
-    width: 300px;
 }

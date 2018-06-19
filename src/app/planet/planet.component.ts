@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-planet',
@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PlanetComponent implements OnInit {
   @Input() planet;
+  @Output() change: EventEmitter<object> = new EventEmitter;
 
   constructor() { }
 
