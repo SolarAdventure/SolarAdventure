@@ -1,5 +1,4 @@
-
-  <mat-form-field color="accent" appearance="outline">
-    <mat-label>Suchen</mat-label>
-    <input matInput>
-  </mat-form-field>
+<mat-form-field color="accent" appearance="outline">
+  <mat-label>Suchen</mat-label>
+  <input matInput (input)="search(($event).data)" (keydown.backspace)="text = text.slice(0, -1); search('')">
+</mat-form-field>
