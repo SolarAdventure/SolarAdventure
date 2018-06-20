@@ -1,4 +1,4 @@
-<app-search-bar planets="planets">
+<app-search-bar [planets]="planets" (change)="search($event)">
 </app-search-bar>
 <div id="planets">
   <app-planet *ngFor="let planet of planets" [planet]="planet" (change)="save()"></app-planet>

@@ -11,24 +11,27 @@ export class AppComponent {
   constructor(public dialog: MatDialog) {
     const plans = JSON.parse(localStorage.getItem('planets'));
     if (plans) {
+      this.originalplanets = plans;
       this.planets = plans;
     }
-  }
-  planets = [
+  }-
+  planets;
+  
+  originalplanets = [
     {
       name: 'Sonne',
       description: 'Ein Stern',
-      img: '../assets/00_sun.svg',
+      img: '',
       isFavourite: false
     }, {
       name: 'Merkur',
       description: 'Planet: 1, Temperatur: 400 Grad, Durchmesser: 4878km',
-      img: '../assets/01_mercury.svg',
+      img: '../01_mercury.svg',
       isFavourite: false
     }, {
       name: 'Venus',
       description: 'Planet: 2, Temperatur: 460 Grad, Durchmesser: 12104km',
-      img: '../assets/02_venus.svg',
+      img: './assets/02_venus.svg',
       isFavourite: false
     }, {
       name: 'Erde',
@@ -69,6 +72,13 @@ export class AppComponent {
 
   save() {
     localStorage.setItem('planets', JSON.stringify(this.planets));
+  }
+
+  search(text){
+    this.planets = this.originalplanets.filter(planet => {
+      return planet.name.toLowerCase().includes(text)
+    });
+    console.log(this.planets);
   }
 
   // Sources:
